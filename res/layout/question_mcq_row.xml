@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+	<LinearLayout
+	    android:layout_height="wrap_content"
+	  	android:layout_width="fill_parent"
+	  	android:orientation="horizontal"
+	  	android:layout_centerHorizontal="true" 
+	  	android:weightSum="5">
+	    
+    	<TextView
+            android:id="@+id/tvQuestionAttribute"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:textSize="8pt"
+            android:textColor="#A9E2F3"
+            android:text="This is question body..."/>
+
+		<ImageView 
+	    	android:id="@+id/ivDrag" 
+	    	android:layout_width="0dp"
+	    	android:layout_height="wrap_content"
+	    	android:layout_weight="1" 
+	    	android:src="@drawable/icmpmove"/>"
+    					    		
+    	<TextView
+    	    android:id="@+id/tvAnswerAttribute"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+    	    android:layout_weight="2"
+    	    android:gravity="right"
+    	    android:textSize="7pt"
+    	    android:textColor="#81DAF5"
+    	    android:text="Answer attribute..."/>
+    		
+	</LinearLayout>     
+    	
+</RelativeLayout>

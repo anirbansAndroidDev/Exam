@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ica.exam"
+    android:versionCode="41"
+    android:versionName="1.1">
+
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA"/>
+    <uses-permission android:name="android.permission.READ_OWNER_DATA"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <uses-sdk android:minSdkVersion="8"/>
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name">
+        <activity
+            android:name=".MainMenuInTabView"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortait"
+            android:icon="@drawable/icon" 
+            android:theme="@style/MyTheme">
+             <!--android:screenOrientation="sensorPortait" 
+             android:configChanges="orientation|keyboardHidden"
+             android:theme="@android:style/Theme.DeviceDefault.InputMethod" -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ExamActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortait"
+            android:theme="@android:style/Theme.DeviceDefault">
+        </activity>
+        <activity
+            android:name="SubjectList_Exam"
+            android:screenOrientation="sensorPortait"
+            android:theme="@android:style/Theme.DeviceDefault">
+        </activity>
+        <activity
+            android:name="SubjectList_Result"
+            android:screenOrientation="sensorPortait"
+            android:theme="@android:style/Theme.DeviceDefault">
+        </activity>
+        <activity
+            android:name=".QuestionList_Exam"
+            android:screenOrientation="sensorPortait"
+            android:theme="@android:style/Theme.DeviceDefault">
+        </activity>
+        <activity
+            android:name=".QuestionList_Result"
+            android:screenOrientation="sensorPortait"
+            android:theme="@android:style/Theme.DeviceDefault">
+        </activity>
+        <activity
+            android:name=".Question_SCQ_Details"
+            android:screenOrientation="sensorPortait"
+            android:theme="@android:style/Theme.DeviceDefault">
+        </activity>
+        <activity
+            android:name=".Question_SCQ_Details_Result"
+            android:screenOrientation="sensorPortait"
+            android:theme="@android:style/Theme.DeviceDefault">
+        </activity>
+        <activity
+            android:name=".Question_MCQ_Details"
+            android:screenOrientation="sensorPortait"
+            android:theme="@android:style/Theme.DeviceDefault">
+        </activity>
+        <activity
+            android:name=".Question_MCQ_Details_Result"
+            android:screenOrientation="sensorPortait"
+            android:theme="@android:style/Theme.DeviceDefault">
+        </activity>
+        <activity
+            android:name=".Question_FIB_Details"
+            android:screenOrientation="sensorPortait"
+            android:theme="@android:style/Theme.DeviceDefault">
+        </activity>
+        <activity
+            android:name=".Question_FIB_Details_Result"
+            android:screenOrientation="sensorPortait"
+            android:theme="@android:style/Theme.DeviceDefault">
+        </activity>
+        <activity
+            android:name=".Question_MM_Details"
+            android:screenOrientation="sensorPortait"
+            android:theme="@android:style/Theme.DeviceDefault">
+        </activity>
+        <activity
+            android:name=".Question_MM_Details_Result"
+            android:screenOrientation="sensorPortait"
+            android:theme="@android:style/Theme.DeviceDefault">
+        </activity>
+        <activity
+            android:name=".Score_Card"
+            android:screenOrientation="sensorPortait"
+            android:theme="@android:style/Theme.DeviceDefault">
+        </activity>
+        <activity
+            android:name=".Score_Card_Result"
+            android:screenOrientation="sensorPortait"
+            android:theme="@android:style/Theme.DeviceDefault">
+        </activity>
+        <activity
+            android:name=".Exam_Download"
+            android:screenOrientation="sensorPortait"
+            android:theme="@android:style/Theme.DeviceDefault">
+        </activity>
+        <activity
+            android:name=".Question_Download"
+            android:screenOrientation="sensorPortait"
+            android:theme="@android:style/Theme.DeviceDefault">
+        </activity>
+        <activity
+            android:name=".CourseFeeSummary"
+            android:screenOrientation="sensorPortait"
+            android:theme="@android:style/Theme.DeviceDefault">
+        </activity>
+        <activity
+            android:name=".Receipt"
+            android:screenOrientation="sensorPortait"
+            android:theme="@android:style/Theme.DeviceDefault">
+        </activity>
+        <activity
+            android:name=".Installment"
+            android:screenOrientation="sensorPortait"
+            android:theme="@android:style/Theme.DeviceDefault">
+        </activity>
+        <activity
+            android:name=".SubjectVsMarks"
+            android:screenOrientation="sensorPortait"
+            android:theme="@android:style/Theme.DeviceDefault">
+        </activity>
+        <activity
+            android:name=".ICAMainLogin"
+            android:screenOrientation="sensorPortait"
+            android:theme="@android:style/Theme.DeviceDefault">
+        </activity>
+        <activity
+            android:name=".StudentProgress"
+            android:screenOrientation="sensorPortait"
+            android:theme="@style/MyTabTheme">
+        </activity>
+        <activity
+            android:name="ica.PracticeMaterials.StudyMaterialSubjectBrowserActivity"
+            android:screenOrientation="sensorPortait"
+            android:theme="@android:style/Theme.DeviceDefault">
+        </activity>
+        <activity
+            android:name="com.placement.PlacementDetailsActivity"
+            android:label="Placement Details"
+            android:logo="@drawable/icon"
+            android:screenOrientation="sensorPortait"
+            android:theme="@android:style/Theme.DeviceDefault">
+        </activity>
+        <activity
+            android:name="com.placement.PlacementSelectorActivity"
+            android:logo="@drawable/icon"
+            android:screenOrientation="sensorPortait"
+            android:theme="@android:style/Theme.DeviceDefault">
+        </activity>
+        <activity
+            android:name="ExamResultActivity"
+            android:logo="@drawable/icon"
+            android:screenOrientation="sensorPortait"
+            android:theme="@android:style/Theme.DeviceDefault">
+        </activity>
+        <activity
+            android:name="ExamStudentDetails"
+            android:logo="@drawable/icon"
+            android:screenOrientation="sensorPortait"
+            android:theme="@android:style/Theme.DeviceDefault">
+        </activity>
+        <activity android:name=".IndexActivity"
+            android:screenOrientation="sensorPortait"></activity>
+        
+        <activity android:name="ica.tab.view.PlacementActivity"
+            android:screenOrientation="sensorPortait" />
+        <activity android:name="ica.tab.view.ProgressActivity"
+            android:screenOrientation="sensorPortait" />
+        <activity android:name="ica.tab.view.ExamActivity"
+            android:screenOrientation="sensorPortait" />
+        <activity android:name="ica.tab.view.SyncActivity"
+            android:screenOrientation="sensorPortait" />
+        <activity android:name="ica.tab.view.HomeActivity"
+            android:screenOrientation="sensorPortait" />
+        <activity android:name="ica.exam.ExamTab"></activity>
+        
+        <activity android:name="ica.tab.view.DownloadActivity" />
+        <activity android:name="ica.tab.view.ScheduleActivity" />
+        <activity android:name="ica.tab.view.StudyMaterialActivity" />
+        <activity android:name="ica.tab.view.ClassExersiseActivity" />
+        <activity android:name="ica.tab.view.ClassResult"></activity>
+        <activity android:name="ica.tab.view.MockTestActivity" />
+        
+    </application>
+
+</manifest>

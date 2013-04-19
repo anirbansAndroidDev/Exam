@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pj="http://schemas.android.com/apk/res/ica.exam"
+    xmlns:bm="ica.exam"
+    android:id="@+id/relParent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color">
+
+    <LinearLayout
+        android:id="@+id/llHeaderHolder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/llHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/LogoIndexPage"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitStart"
+                android:src="@drawable/icon"/>
+
+            <Button
+                android:id="@+id/btnLoginIndexPage"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_toLeftOf="@+id/btnExitIndexPage"
+                android:gravity="center"
+                android:text="Login"
+                android:textColor="@color/SunshineYellow"
+                android:textStyle="italic"
+                android:typeface="serif"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/btnExitIndexPage"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:gravity="center"
+                android:text="Logout"
+                android:textColor="@color/SunshineYellow"
+                android:textStyle="italic"
+                android:typeface="serif"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llBottomBorder"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/white_bar"
+            android:orientation="vertical">
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linTicker"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/llHeaderHolder"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Rss Ticker"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/horizontalMenubar"
+        android:layout_below="@+id/linTicker"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linStudentID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/ivStudentImage"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:padding="3dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/anonymous_old"/>
+
+            <TextView
+                android:id="@+id/txtStudentName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student Name"
+                android:textColor="#CEECF5"
+                android:typeface="sans"/>
+        </LinearLayout>
+
+        <!-- <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:padding="5dip">
+
+            <ica.exam.Carousel.Carousel
+                android:id="@+id/carousel"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:animationDuration="200"
+                pj:Items="@array/entries"
+                pj:SelectedItem="0"
+                pj:UseReflection="true">
+            </ica.exam.Carousel.Carousel>
+        </LinearLayout> -->
+    </LinearLayout>
+
+    <SlidingDrawer
+        android:id="@+id/slidingDrawer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:content="@+id/content"
+        android:handle="@+id/handle"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/handle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/information"
+            android:text="Notification"/>
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#AAFFFFFF"
+            android:gravity="center">
+        </LinearLayout>
+    </SlidingDrawer>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalMenubar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:fadingEdgeLength="15dp"
+        android:foregroundGravity="center_vertical|center_horizontal"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="3dp">
+
+            <ImageButton
+                android:id="@+id/btnSync"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!-- <ImageButton
+                android:id="@+id/btnAttendance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/attendance_list_icon"/> -->
+
+            <ImageButton
+                android:id="@+id/btnMockTest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/exams_icon"/>
+
+            <ImageButton
+                android:id="@+id/btnPlacement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_placement"/>
+
+            <ImageButton
+                android:id="@+id/btnAcademicProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icoprogress"/>
+
+            <ImageButton
+                android:id="@+id/btnFinancial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cost_icon"/>
+
+            <ImageButton
+                android:id="@+id/btnStudyMaterial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/study_material"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

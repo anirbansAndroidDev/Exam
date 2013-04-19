@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/folder_yellow"
+        android:layout_margin="5dp"
+        android:gravity="center_vertical"/>
+				
+	<TextView
+		android:id="@+id/tvSubject"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/img_subject"
+		android:layout_marginBottom="2dp"
+	  	android:text="Subject"
+	  	android:textSize="6pt"
+	  	android:textColor="#A9E2F3"
+	  	android:layout_marginRight="25dp"/>
+
+    <TextView
+        android:id="@+id/tvChapterCount"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/img_subject"
+        android:layout_below="@+id/tvSubject"
+        android:text="No. of chapter (2)"
+        android:textSize="5pt"
+        android:textColor="#81DAF5"/>
+
+	<ImageView
+        android:id="@+id/img_next"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/lst_next"
+        android:layout_margin="5dp"
+        android:gravity="center_vertical"/>
+    	    
+</RelativeLayout>

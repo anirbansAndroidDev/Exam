@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="4px"
+    android:paddingLeft="4px"
+    android:paddingRight="4px"
+    android:paddingTop="4px" >
+
+	<ScrollView
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/scroller"
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	    android:layout_alignParentTop="true">
+    
+	    <TableLayout
+	        android:id="@+id/tlLedger"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true">
+	    
+	        <TableRow
+	            android:id="@+id/tableRow1"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content" 
+	            android:weightSum="2">
+	
+	            <TextView
+	                android:id="@+id/dgtvAC"
+	                android:layout_width="60dp"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_alignParentTop="true"
+	                android:layout_weight="1"
+	                android:text="A/C:" />
+	
+	            <Spinner
+	                android:id="@+id/dgspAC"
+	                android:layout_width="240dp"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentRight="true"
+	                android:layout_weight="1" />
+	        </TableRow>
+	
+	        <TableRow
+	            android:id="@+id/tableRow2"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content" 
+	            android:weightSum="2">
+	
+	            <TextView
+	                android:id="@+id/dgtvType"
+	                android:layout_width="60dp"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:text="Dr/Cr:" 
+	                android:layout_weight="1" />
+	
+	            <RadioGroup
+	                android:id="@+id/dgrgType"
+	                android:layout_width="240dp"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentRight="true"
+	                android:orientation="horizontal" 
+	                android:layout_weight="1">
+	
+	                <RadioButton
+	                    android:id="@+id/rbDr"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:checked="true"
+	                    android:text="Debit" />
+	
+	                <RadioButton
+	                    android:id="@+id/rbCr"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="Credit" />
+	            </RadioGroup>
+			</TableRow>
+	
+	        <TableRow
+	            android:id="@+id/tableRow3"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content" 
+	            android:weightSum="2">
+	            
+	            <TextView
+	                android:id="@+id/dgtvAmount"
+	                android:layout_width="60dp"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_below="@+id/dgrgType"
+	                android:text="Amount:" 
+	                android:layout_weight="1"/>
+	
+	            <EditText
+	                android:id="@+id/dgetAmount"
+	                android:layout_width="240dp"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentRight="true"
+	                android:layout_below="@+id/dgtvAmount"
+	                android:inputType="numberDecimal" 
+	                android:layout_weight="1"/>
+	        </TableRow>
+	        
+		</TableLayout>
+
+    </ScrollView>
+</RelativeLayout>

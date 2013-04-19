@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:paddingBottom="50dp"
+    android:paddingTop="50dp">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editDayCount"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:text="Top 10 Placement for"/>
+
+    <EditText
+        android:id="@+id/editDayCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textView1"
+        android:ems="5"
+        android:inputType="number"
+        android:maxLength="4">
+
+        <requestFocus/>
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editDayCount"
+        android:layout_alignTop="@+id/editDayCount"
+        android:layout_toRightOf="@+id/editDayCount"
+        android:gravity="center_vertical"
+        android:text="Days."/>
+
+</RelativeLayout>

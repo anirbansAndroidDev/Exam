@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MyTheme">
+        <item name="android:textAppearance">@style/MyDefaultTextAppearance</item>
+    </style>
+
+    <style name="MyDefaultTextAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="myImageView">
+
+        <!-- 3dp so the background border to be visible -->
+        <item name="android:padding">3dp</item>
+        <item name="android:background">@drawable/image_border</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+    <style name="CustomProgressBar" parent="android:Widget.ProgressBar.Horizontal">
+		 <item name="android:indeterminateOnly">false</item>
+          <item name="android:progressDrawable" >@drawable/custom_progress_bar_horizontal</item>
+          <item name="android:minHeight">10dip</item>
+          <item name="android:maxHeight">20dip</item>
+	</style>
+</resources>

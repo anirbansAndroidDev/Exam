@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <array name="entries">
+        <item>@drawable/sync_cube</item>
+        <item>@drawable/mock_test</item> 
+        <item>@drawable/placement</item>
+        <!-- <item>@drawable/academic_progress</item> -->
+      <!--   <item>@drawable/finance</item> -->
+    </array>
+
+</resources>

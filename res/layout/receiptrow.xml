@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/single_receipt_row"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="4" android:background="@drawable/border_student_image" android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/txtReceiptCourseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_weight="1"
+        android:text="TextView" android:textSize="7pt"/>
+
+    <TextView
+        android:id="@+id/txtReceiptMRDt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_weight="1"
+        android:text="TextView" android:textSize="7pt"/>
+
+    <TextView
+        android:id="@+id/txtReceiptMRNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="2"
+        android:layout_weight="1"
+        android:text="TextView" android:textSize="7pt"/>
+
+    <TextView
+        android:id="@+id/txtReceiptFees"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="3"
+        android:layout_weight="1"
+        android:gravity="right"        
+        android:text="TextView" android:textSize="7pt"/>
+
+</TableRow>

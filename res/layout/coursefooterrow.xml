@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/single_footer_course_row"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" android:background="#33CCFF" android:weightSum="4">
+
+      <TextView
+        android:id="@+id/txttotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total" android:layout_weight="1" android:textColor="#000000" android:textSize="7pt"/>
+
+    <TextView
+        android:id="@+id/txtFtrTotalCourseFee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="0" android:layout_weight="1" android:textColor="#000000" android:textSize="7pt"/>
+
+    <TextView
+        android:id="@+id/txtFooterTotalRcvd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0" 
+        android:paddingLeft="15px" 
+        android:paddingRight="15px" 
+        android:gravity="right"        
+        android:typeface="serif" android:layout_weight="1" android:textColor="#000000" android:textSize="7pt"/>
+
+    <TextView
+        android:id="@+id/txtFooterTotalDue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0" 
+        android:paddingLeft="15px" 
+        android:paddingRight="15px" 
+        android:gravity="right"        
+        android:typeface="serif" android:layout_weight="1" android:textColor="#000000" android:textSize="7pt"/>
+
+</TableRow>

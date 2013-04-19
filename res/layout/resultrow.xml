@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" android:id="@+id/llResultRow">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#55000000"
+        android:gravity="center_vertical" android:layout_marginTop="3dp" android:layout_marginBottom="3dp">
+
+        <LinearLayout
+            android:id="@+id/llpercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" >
+
+            <TextView
+                android:id="@+id/txtRightPercent"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rightgradient"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="0"
+                android:textColor="#FFFFFF" android:drawableRight="@drawable/expand_icon"/>
+
+            <TextView
+                android:id="@+id/txtWrongPercent"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/leftgradient"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="0"
+                android:textColor="#FFFFFF" android:drawableRight="@drawable/expand_icon"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtIdx"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center_vertical"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            android:paddingLeft="2dp"/>
+
+        <TextView
+            android:id="@+id/txtQtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toLeftOf="@+id/llpercent"
+            android:layout_toRightOf="@+id/txtIdx"
+            android:gravity="center_vertical"
+            android:text="Questions"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"/>
+    </RelativeLayout>
+
+</LinearLayout>

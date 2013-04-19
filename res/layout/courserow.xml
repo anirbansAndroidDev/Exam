@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/single_course_row"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp" android:weightSum="4" android:background="@drawable/border_student_image" android:gravity="center_vertical">
+
+      <TextView
+        android:id="@+id/txtCourseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" android:layout_weight="1" android:textSize="7pt"/>
+
+    <TextView
+        android:id="@+id/txtCourseFee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="TextView" android:layout_weight="1" android:textSize="7pt"/>
+
+    <TextView
+        android:id="@+id/txtTotalRcvd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" 
+        android:paddingLeft="15px" 
+        android:paddingRight="15px" 
+        android:gravity="right"        
+        android:layout_weight="1" android:textSize="7pt"/>
+
+    <TextView
+        android:id="@+id/txtTotalDue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" 
+        android:paddingLeft="15px" 
+        android:paddingRight="15px" 
+        android:gravity="right"        
+        android:layout_weight="1" android:textSize="7pt"/>
+
+</TableRow>

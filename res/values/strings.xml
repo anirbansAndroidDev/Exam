@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+
+    <style name="ButtonText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+    <color name="main_header">#488AC7</color>
+    <color name="main_sub">#56A5EC</color>
+    <color name="header">#6698FF</color>
+    <color name="bg_color">#142c57</color>
+
+    <string name="app_name">Course</string>
+    <string name="hello">Hello World, AchartSampleActivity!</string>
+    <string name="chartTitle">BarChart</string>
+    <string name="date">Date</string>
+    <string name="value">Sample</string>
+    <string name="WEBSERVICE_NAMESPACE">http://icaerp.com/</string>
+    <string name="SOAP_URL">http://icaerp.com/AndroidDataService/dataServiceAndroid.asmx?wsdl</string>
+    <string name="LOGIN_SOAP_ACTION">http://icaerp.com/login</string>
+    <string name="LOGIN_METHOD_NAME">login</string>
+    <string name="MAIN_LOGIN_SOAP_ACTION">http://icaerp.com/mainlogin</string>
+    <string name="MAIN_LOGIN_METHOD_NAME">mainlogin</string>
+    <string name="CHAPTER_SOAP_ACTION">http://icaerp.com/chapterList</string>
+    <string name="CHAPTER_METHOD_NAME">chapterList</string>
+    <string name="EXAM_SOAP_ACTION">http://icaerp.com/responseQuestionListbyLevel</string>
+    <string name="EXAM_METHOD_NAME">responseQuestionListbyLevel</string>
+    <string name="EXAM_SOAP_UPLOAD_ACTION">http://icaerp.com/requestAnswerPipedQA</string>
+    <string name="EXAM_UPLOAD_METHOD_NAME">requestAnswerPipedQA</string>
+    <string name="LEVEL_METHOD_NAME">levelList</string>
+    <string name="LEVEL_SOAP_ACTION">http://icaerp.com/levelList</string>
+    <string name="PHOTO_SOAP_ACTION">http://icaerp.com/responsePhotoLink</string>
+    <string name="PHOTO_METHOD_NAME">responsePhotoLink</string>
+    <string name="FEE_SOAP_ACTION">http://icaerp.com/responsePayment</string>
+    <string name="FEE_METHOD_NAME">responsePayment</string>
+    <string name="RESULT_SOAP_ACTION">http://icaerp.com/ResponseMockSubjectMarks</string>
+    <string name="RESULT_METHOD_NAME">ResponseMockSubjectMarks</string>
+    <string name="MODULE_MARKS_COMPARISON_SOAP_ACTION">http://icaerp.com/ResponseModulewiseScoreComparison</string>
+    <string name="MODULE_MARKS_COMPARISON_METHOD_NAME">ResponseModulewiseScoreComparison</string>
+    <string name="CHAPTER_MARKS_COMPARISON_SOAP_ACTION">http://icaerp.com/ResponseChapterwiseScoreComparison</string>
+    <string name="CHAPTER_MARKS_COMPARISON_METHOD_NAME">ResponseChapterwiseScoreComparison</string>
+    <string name="SUBJECT_MARKS_COMPARISON_SOAP_ACTION">http://icaerp.com/ResponseSubjectwiseScoreComparison</string>
+    <string name="SUBJECT_MARKS_COMPARISON_METHOD_NAME">ResponseSubjectwiseScoreComparison</string>
+    <string name="FTP_UPGRADE_SOAP_ACTION">http://icaerp.com/ResponseCheckUpgrade</string>
+    <string name="FTP_UPGRADE_METHOD_NAME">ResponseCheckUpgrade</string>
+    <string name="STUDY_MAT_SOAP_ACTION">http://icaerp.com/responseChapterPDF</string>
+    <string name="STUDY_MAT_METHOD_NAME">responseChapterPDF</string>
+    <string name="SCHEDULE_LIST_METHOD_NAME">EventlList</string>
+    <string name="SCHEDULE_LIST_SOAP_ACTION">http://icaerp.com/EventlList</string>
+    <string name="SCHEDULE_UPLOAD_METHOD_NAME">StoreEvent</string>
+    <string name="SCHEDULE_UPLOAD_SOAP_ACTION">http://icaerp.com/StoreEvent</string>
+    <string name="PLACEMENT_DOWNLOAD_METHOD_NAME">PlacementList</string>
+    <string name="PLACEMENT_DOWNLOAD_SOAP_ACTION">http://icaerp.com/PlacementList</string>
+    <string name="PRACTICE_EXAM_RESULT_METHOD_NAME">StudentBatchResult</string>
+    <string name="PRACTICE_EXAM_RESULT_SOAP_ACTION">http://icaerp.com/StudentBatchResult</string>
+    <string name="ICA_LOG_METHOD_NAME">StudentLogMaintain</string>
+    <string name="ICA_LOG_SOAP_ACTION">http://icaerp.com/StudentLogMaintain</string>
+    <string name="STUDENT_IMAGE">student.jpg</string>
+    <string name="Theme_blue">#33CCFF</string>
+
+    <color name="DazzleBlueTheme">#33CCFF</color>
+    <color name="BlackDefault">#000000</color>
+    <color name="SunshineYellow">#FFFF66</color>
+
+</resources>

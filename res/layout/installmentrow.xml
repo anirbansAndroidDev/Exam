@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/single_inst_row"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" android:weightSum="3" android:background="@drawable/border_student_image" android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/txtInstallmentCourseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" 
+        android:layout_column="0"
+        android:layout_weight="1" android:textSize="7pt"/>
+
+    <TextView
+        android:id="@+id/txtInstallmentDt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:text="TextView" android:layout_weight="1" android:gravity="right" android:textSize="7pt"/>
+
+    <TextView
+        android:id="@+id/txtInstallmentAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="2"
+        android:text="TextView" 
+        android:gravity="right"
+        android:layout_weight="1" android:textSize="7pt"/>
+
+</TableRow>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llChartHolderMonthVsMarks"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    android:padding="3dp" >
+
+    <TextView
+        android:id="@+id/txtChartHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center_horizontal"
+        android:text="Subject Versus Average Marks"
+        android:textColor="#fff5ee"/>
+
+</LinearLayout>

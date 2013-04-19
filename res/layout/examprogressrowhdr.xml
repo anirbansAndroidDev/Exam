@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/trExamProgressHdr"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/header" >
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:gravity="center_vertical"
+        android:text="#" android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/txtPrgrssNameHdr"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="Name"
+        android:textColor="#000000" />
+      <TextView
+        android:id="@+id/txtHdnRowIDHdr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/txtParentIDHdr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subject"
+        android:visibility="gone" android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/txtStatusHdr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Status"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/txtMarksHdr"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:gravity="right"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:text="Score"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/txtHighestObtainedHdr"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:gravity="right"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:text="Highest Score"
+        android:textColor="#000000" />
+
+</TableRow>

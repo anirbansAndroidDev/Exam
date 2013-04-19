@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="5px"
+    android:paddingRight="5px"
+    android:paddingTop="10px" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/resultHolderMain"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="5dp">
+
+                <LinearLayout
+                    android:id="@+id/llResultRow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#55FFF333"
+                        android:gravity="center_vertical" >
+
+                        <LinearLayout
+                            android:id="@+id/llpercent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true" >
+
+                            <TextView
+                                android:id="@+id/txtRightPercent"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rightgradient"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:text="%"
+                                android:textColor="#FFFFFF" 
+                                android:drawableLeft="@drawable/calendar_checkmark"
+                                android:padding="8dp"/>
+
+                            <TextView
+                                android:id="@+id/txtWrongPercent"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/leftgradient"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:text="%"
+                                android:textColor="#FFFFFF" 
+                                android:drawableLeft="@drawable/wrongpercent"
+                                android:padding="8dp"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txtIdx"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center_vertical"
+                            android:text="Sl.No."
+                            android:textColor="#FFFFFF"
+                            android:textSize="16dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="4dp"/>
+
+                        <TextView
+                            android:id="@+id/txtQtext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/txtIdx"
+                            android:gravity="center_vertical"
+                            android:text="Questions"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16dp"
+                            android:layout_marginLeft="28dp" 
+                            android:layout_marginRight="3dp"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/resultHolder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

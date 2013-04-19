@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="4px"
+    android:paddingLeft="4px"
+    android:paddingRight="4px"
+    android:paddingTop="4px">
+	
+    <TextView
+        android:id="@+id/dgtvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" 
+        android:text="Email:" />
+
+    <EditText
+        android:id="@+id/dgetEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/dgtvEmail" 
+        android:inputType="textEmailAddress">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/dgtvPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/dgetEmail"
+        android:text="Password:" />
+
+    <EditText
+        android:id="@+id/dgetPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/dgtvPassword"
+        android:inputType="textPassword" />
+    
+</RelativeLayout>

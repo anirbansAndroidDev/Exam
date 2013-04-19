@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:background="@color/bg_color">
+
+    <LinearLayout
+        android:id="@+id/llParent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" android:padding="3dp" android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Fee Summary" 
+            android:gravity="center" 
+            android:textSize="10pt"
+            android:typeface="serif" 
+            android:textColor="#ffffff"/>
+
+        <LinearLayout
+            android:id="@+id/llBottomBorder"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/white_bar"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/tblFeeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/header_background" >
+
+                <TextView
+                    android:id="@+id/HdrCourseName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Course"
+                    android:textColor="#000000" 
+                    android:textSize="7pt"/>
+
+                <TextView
+                    android:id="@+id/HdrCourseFee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="Course Fee"
+                    android:textColor="#000000" 
+                    android:textSize="7pt"/>
+
+                <TextView
+                    android:id="@+id/HdrTotalRcvd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="Total Recd. Amt"
+                    android:textColor="#000000" android:textSize="7pt"/>
+
+                <TextView
+                    android:id="@+id/HdrTotalDue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="Total Due Amt."
+                    android:textColor="#000000" android:textSize="7pt"/>
+            </TableRow>
+        </TableLayout>
+
+        <!--
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:background="#33CCFF">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="right"
+                android:text="Total    " android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/txtTotalFeeAmt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Amt.." android:gravity="right" android:textColor="#000000"/>
+        </LinearLayout>
+        -->
+    </LinearLayout>
+
+</ScrollView>
